@@ -1,16 +1,9 @@
 import Course from "./Course";
-import { frontEnd } from "../../data";
+import {frontEnd} from "../../data";
 
-const CSS = (props) => {
-  let courses = frontEnd.map((course) => {
-    return (
-      <Course
-        title={course.title}
-        desc={course.description}
-        img={course.im}
-        key={course.id}
-      />
-    );
+const CSS = props => {
+  let courses = frontEnd.map(course => {
+    return <Course course={coures} key={course.id} />;
   });
   return (
     <div>
