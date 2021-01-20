@@ -3,7 +3,7 @@ import {frontEnd} from "../../data";
 
 const CSS = props => {
   let courses = frontEnd.map(course => {
-    return <Course course={coures} key={course.id} />;
+    return <Course course={course} key={course.id} />;
   });
   return (
     <div>
