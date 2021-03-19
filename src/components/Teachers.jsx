@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import { teachersList } from "../data";
 
 const Teachers = () => {
@@ -5,7 +6,7 @@ const Teachers = () => {
     return (
       <li className="teacher" key={teacher.id}>
         <img className="teacher-img" src={teacher.im} alt="teacher" />
-        <h3>{teacher.name}</h3>
+        <Link to={`/teachers/${teacher.name}`}>{teacher.name}</Link>
         <p>{teacher.bio}</p>
       </li>
     );
