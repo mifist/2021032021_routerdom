@@ -1,20 +1,23 @@
+import {NavLink} from 'react-router-dom'
+
+
 const Header = () => (
   <header className="top-header">
     <div className="logo">
-      <img className="fluid-img" src="/i/logo.svg" />
+      <img className="fluid-img" src="/i/logo.svg" alt="mycourses"/>
     </div>
     <ul className="main-nav">
       <li>
-        <a href="#">Home</a>
+        <NavLink exact to="/">Home</NavLink>
       </li>
       <li>
-        <a href="#">About</a>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li>
-        <a href="#">Teachers</a>
+        <NavLink to="/teachers">Teachers</NavLink>
       </li>
       <li>
-        <a href="#">Courses</a>
+        <NavLink to="/courses">Courses</NavLink>
       </li>
     </ul>
   </header>
